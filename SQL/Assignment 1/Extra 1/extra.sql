@@ -8,7 +8,7 @@ CREATE TABLE trainee(
     gender			ENUM('male', 'female', 'unknown'),
     ET_IQ			TINYINT UNSIGNED CHECK (ET_IQ<=20) NOT NULL,
     ET_Gmath		TINYINT UNSIGNED CHECK (ET_Gmath<=20) NOT NULL,
-    ET_Englist		TINYINT UNSIGNED CHECK (ET_Englist<=50) NOT NULL,
+    ET_English		TINYINT UNSIGNED CHECK (ET_English<=50) NOT NULL,
     training_class	VARCHAR(20) NOT NULL,
     evalution_note	VARCHAR(100) NOT NULL
 );

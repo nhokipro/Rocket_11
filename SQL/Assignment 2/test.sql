@@ -43,7 +43,11 @@ SELECT*, count(a.questionID)
 FROM question q
 JOIN answer a on q.questionID = a.questionID
 GROUP BY a.questionID
-HAVING count(a.questionID) = (SELECT count(a.questionID) as c
+HAVING count(a.questionID) = (SELECT max(count(a.questionID) 
+							( SELECT count(a.questionID)
+								FROM answer
+                                GROUP BY questionID
+                            )
 							from answer);
 -- cau 14
 SELECT *, count(q.categoryID)
