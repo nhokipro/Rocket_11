@@ -100,7 +100,11 @@ CREATE PROCEDURE `get` (IN `string` VARCHAR(100))
         WHERE g.GroupName LIKE concat('%', `string`, '%')
         OR a.UserName LIKE concat('%', `string`, '%');
 	END $$
-DELIMITER ; 
+DELIMITER ;
+
+-- chua cau 6
+
+ 
 -- cau 8
 DROP PROCEDURE IF EXISTS `get8`;
 DELIMITER $$
