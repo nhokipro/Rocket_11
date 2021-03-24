@@ -10,6 +10,7 @@ public class Extra {
 		StringToInt();
 		Ex4_ques1();
 		Ex4_ques2();
+		Ex4_ques4();
 	}
 
 // ques 1
@@ -47,12 +48,14 @@ public class Extra {
 		String last = s.substring(3);
 		System.out.println(last);
 	}
+
 //ques 4
 	public static float Ques4() {
 		float a = 1f;
 		float b = 2f;
-		return a/b;
+		return a / b;
 	}
+
 // ex2
 // ques 1
 // khai bao newAccount trong vòng for
@@ -63,14 +66,16 @@ public class Extra {
 		int m = Integer.parseInt(s);
 		System.out.println(s);
 	}
+
 //ex 4
 // ques 1 
 	public static void Ex4_ques1() {
 		String s = "cao hung   son";
 		String[] word = s.split("\\s+");
 		System.out.println("so tu la: " + word.length);
-		
+
 	}
+
 // ques 3
 	public static void Ex4_ques2() {
 		Scanner input = new Scanner(System.in);
@@ -84,8 +89,14 @@ public class Extra {
 			System.out.print(m + " ");
 		}
 	}
+
 // ques 4
 	public static void Ex4_ques4() {
-		
+		Scanner input = new Scanner(System.in);
+		String s = input.nextLine();
+		for (int i = 0; i < s.length(); i++) {
+			String words = s.substring(i, i+1).toUpperCase();
+			System.out.println(words);
+		}
 	}
 }
