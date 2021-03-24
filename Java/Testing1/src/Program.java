@@ -1,8 +1,3 @@
-import java.time.LocalDate;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Program {
 	public static void main(String[] args) {
 		// create department
@@ -33,29 +28,29 @@ public class Program {
 		position1.name = "Marketing";
 
 		// Create account
-		Account account1 = new Account();
-		account1.id = 1;
-		account1.email = "haidnag@gmail.com";
-		account1.groups = new Group[] { group1, group2 };
-		account1.position = position1;
-		account1.department = department1;
-		account1.fullname = "Nguyễn Hải Đăng";
-		account1.createDate = LocalDate.now();
-		account1.username = "haidangproductions";
+//		Account account1 = new Account();
+//		account1.id = 1;
+//		account1.email = "haidnag@gmail.com";
+//		account1.groups = new Group[] { group1, group2 };
+//		account1.position = position1;
+//		account1.department = department1;
+//		account1.fullname = "Nguyễn Hải Đăng";
+//		account1.createDate = LocalDate.now();
+//		account1.username = "haidangproductions";
+//
+//		Account account2 = new Account();
+//		account2.id = 2;
+//		account2.email = "nguyenhaidang@gmail.com";
+//		account2.groups = new Group[] { group1 };
+//		account2.position = position2;
+//		account2.department = department2;
+//		account2.fullname = "Nguyễn Hải Đăng";
+//		account2.createDate = LocalDate.now();
+//		account2.username = "dangblack";
 
-		Account account2 = new Account();
-		account2.id = 2;
-		account2.email = "nguyenhaidang@gmail.com";
-		account2.groups = new Group[] { group1 };
-		account2.position = position2;
-		account2.department = department2;
-		account2.fullname = "Nguyễn Hải Đăng";
-		account2.createDate = LocalDate.now();
-		account2.username = "dangblack";
-
-		group1.accounts = new Account[] { account1, account2 };
-		Account[] accounts = new Account[] { account1, account2 };
-		Department departments[] = { department1, department2 };
+//		group1.accounts = new Account[] { account1, account2 };
+//		Account[] accounts = new Account[] { account1, account2 };
+//		Department departments[] = { department1, department2 };
 //		for (int i = 0; i < accounts.length; i++) {
 //			System.out.println("acc thu " + (i+1) + " là: ");
 //			System.out.println("ID:" + accounts[i].id);
@@ -214,9 +209,39 @@ public class Program {
 //		} while (i < accounts.length);
 // ex2
 // ques 1
-//		Scanner input = new Scanner(System.in);
 //		System.out.print("nhap i: ");
 //		int i = input.nextInt();
 //		System.out.printf(Locale.ITALY, "%d", i);
+//		Random random = new Random();
+//		int d = random.nextInt(10);
+//		System.out.println(d);
+//		String[] name = {"a", "b", "c", "d", "g", "h"};
+//		Random random = new Random();
+//		int i = random.nextInt(name.length);
+//		System.out.println(name[i]);
+//		int[] a = new int[3]; 
+//		Scanner input = new Scanner(System.in);
+//		for (int i = 0; i < 3; i++) {
+//			System.out.println("so thu " + (i+1) + ": ");
+//			a[i] = input.nextInt();
+//		}
+// ques 1
+//		Scanner scanner = new Scanner(System.in);
+//		Account[] accountss = new Account[10];
+//		for (int i = 0; i < 5; i++) {	
+//			accountss[i] = new Account();
+//			accountss[i].fullname = scanner.nextLine();
+//			accountss[i].email = scanner.nextLine();
+//		}
+//		for (int i = 0; i < 5; i++) {
+//			System.out.println(accountss[i].fullname);
+//			System.out.println(accountss[i].email);
+//		}
+//		String a = "sonnnnnn sonnn";
+//		String b = "sonn s";
+//		String word[] = a.split("\\s");
+//		System.out.println(word.length);
+//		System.out.println(a + b);
 	}
+
 }
