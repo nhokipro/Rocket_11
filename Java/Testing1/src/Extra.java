@@ -99,4 +99,12 @@ public class Extra {
 			System.out.println(words);
 		}
 	}
+// ques 6
+	public static void Ex4_ques6() {
+		Scanner input = new Scanner(System.in);
+		String s = input.nextLine();
+		s.trim();
+		String first = s.substring(0, 0);
+		String last = s.substring(0, 0);
+	}
 }
