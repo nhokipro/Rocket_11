@@ -67,7 +67,7 @@ WHERE e.email = 'nn03@gmail.com';
 SELECT c.country_id,l.location_id, count(employee_id)
 FROM location l
 LEFT JOIN employee e ON l.location_id = e.location_id 
-RIGHT OUTER JOIN country c ON l.country_id = c.country_id
+RIGHT JOIN country c ON l.country_id = c.country_id
 GROUP BY c.country_id;
 
 -- ques 3
@@ -87,7 +87,7 @@ BEGIN
 	GROUP BY c.country_id;
 
     
-    IF soluongEmployee > 3 
+    IF soluongEmployee > 10 
 		THEN SIGNAL SQLSTATE '12345'
     SET MESSAGE_TEXT = 'loi';
     END IF;
